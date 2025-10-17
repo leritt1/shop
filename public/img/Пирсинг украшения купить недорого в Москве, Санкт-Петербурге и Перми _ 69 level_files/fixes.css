@@ -1,0 +1,23 @@
+.accordeon-panel-collapse.in {
+  display: block;
+}
+
+.new-line-wrapper {
+  white-space: pre-line;
+}
+
+.custom-error,
+span.error,
+span.success {
+  padding-left: 0 !important;
+}
+
+.history-link-btn {
+  padding: 6px 4px 4px;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  color: inherit;
+}
