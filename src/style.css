@@ -1,13 +1,34 @@
 @import "tailwindcss";
 @import "bootstrap-icons/font/bootstrap-icons.css";
+@import "flowbite/dist/flowbite.css";
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
   --color-main-color: rgb(248, 248, 248);
   --color-card-color: rgb(255, 255, 255);
   --color-text-color: rgb(0, 0, 0);
-  --color-textred-color: rgb(197,6,13);
-  --text-28:1.75rem;
-  --gap-my:60px;
+  --color-textred-color: rgb(197, 6, 13);
+  --text-28: 1.75rem;
+  --gap-my: 60px;
 }
 
+.swiper {
+      width: 550px;
+      height: 400px;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #444;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
