@@ -1,46 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
+
 <body class="bg-main-color">
-    <div class="grid grid-rows-[auto 1fr auto] min-h-full container m-auto">
-        <main>
-            <div class="grid grid-cols-2">
-                <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><img class="" src="/img/1.jpg" alt=""></div>
-      <div class="swiper-slide"><img class="" src="/img/1.2.jpg" alt=""></div>
-      <div class="swiper-slide"><img class="" src="/img/1.3.jpg" alt=""></div>
-      <div class="swiper-slide"><img class="" src="/img/1.4.jpg" alt=""></div>
-      <div class="swiper-slide"><img class="" src="/img/1.5.jpg" alt=""></div>
-    </div>
-    <div class="swiper-pagination"></div>
-  </div>
-<div>
-    <div>
-    <span class="grow text-gray-400 font-semibold uppercase">Артикул: NTI9223-0,9</span>
-    <h1 class="font-semibold text-2xl uppercase mt-4 mr-60">Накрутка для пирсинга из титана кристаллы CZ для украшений толщиной 1/1,2мм с внутренней резьбой 0,9мм</h1>
-    </div>
-        <div class="flex mt-5 mb-5">
-        <div class="basis-xs">
-            <h5 class="text-gray-400">Материал:</h5>
-            <a class="underline" href="#">Титан, Фианит</a>
+  <div class="grid grid-rows-[auto 1fr auto] min-h-full container m-auto">
+    <main>
+      <div class="grid grid-cols-2">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img class="" src="/img/1.jpg" alt=""></div>
+            <div class="swiper-slide"><img class="" src="/img/1.2.jpg" alt=""></div>
+            <div class="swiper-slide"><img class="" src="/img/1.3.jpg" alt=""></div>
+            <div class="swiper-slide"><img class="" src="/img/1.4.jpg" alt=""></div>
+            <div class="swiper-slide"><img class="" src="/img/1.5.jpg" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
         <div>
-            <h5 class="text-gray-400">Бренд:</h5> 
-            <a class="underline" href="#">Holy  Metal </a>
-        </div>
-        </div>
-        <div><span class="grow font-bold text-textred-color text-2xl">3735₽</span>
+          <div>
+            <span class="grow text-gray-400 font-semibold uppercase">Артикул: NTI9223-0,9</span>
+            <h1 class="font-semibold text-2xl uppercase mt-4 mr-60">Накрутка для пирсинга из титана кристаллы CZ для
+              украшений толщиной 1/1,2мм с внутренней резьбой 0,9мм</h1>
+          </div>
+          <div class="flex mt-5 mb-5">
+            <div class="basis-xs">
+              <h5 class="text-gray-400">Материал:</h5>
+              <a class="underline" href="#">Титан, Фианит</a>
+            </div>
+            <div>
+              <h5 class="text-gray-400">Бренд:</h5>
+              <a class="underline" href="#">Holy Metal </a>
+            </div>
+          </div>
+          <div>
+            <span class="grow font-bold text-textred-color text-2xl">3735₽</span>
             <span class="grow gray-text font-bold line-through">4500 ₽</span>
             <span class="grow text-gray-400 font-bold"> шт.</span>
           </div>
-</div>
+
+          <div id="accordion-collapse" data-accordion="collapse"
+            class="rounded-base border border-gray-300 border-default overflow-hidden shadow-xs ">
+            <h2 id="accordion-collapse-heading-1">
+              <button type="button"
+                class=" cursor-pointer flex items-center justify-between w-full p-5 rtl:text-right text-body rounded-t-base border border-gray-300 border-t-0 border-x-0 border-b-default hover:text-heading hover:bg-neutral-secondary-medium gap-3"
+                data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
+                aria-controls="accordion-collapse-body-1">
+                <span>Толщина: 1.6мм; Резьба: внутренняя 1.2мм; Длина: 9.5мм; Шарик: 4 и 6мм</span>
+                <svg data-accordion-icon class="w-5 h-5 rotate-180 shrink-0" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m5 15 7-7 7 7" />
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-collapse-body-1" class="hidden border border-gray-200  bg-gray-200"
+              aria-labelledby="accordion-collapse-heading-1">
+              <div class="p-4 md:p-5">
+                <button type="button" class="cursor-pointer"><p class="text-gray-600">Толщина: 1.6мм; Резьба: внутренняя 1.2мм; Длина: 9.5мм; Шарик: 4 и
+                  6мм</p></button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+  </div>
 
   <script type="module" src="/src/main.js"></script>
 </body>
+
 </html>

@@ -10,9 +10,37 @@
 
 <body class="bg-main-color text-text-color dark:bg-slate-900 dark:text-amber-50 h-full">
   <div class="grid grid-rows-[auto 1fr auto] min-h-full container m-auto">
-    <header></header>
-    <main>
-      
+    <header></header> <div class="filter mb-10">
+        <h2>фильтровать</h2>
+        <form id="form-filter" action="">
+          <div class="form__item">
+            <div>
+              <label for="searh">введите название</label>
+            </div>
+            <div>
+              <input id="searh" name="searh" type="text" placeholder="поиск" required>
+            </div>
+          </div> 
+          <div class="form__item">
+              <h3>Цвет</h3>
+              <div class="filter-color"> 
+                <div class="filter-color__item">
+                  <input class="color-radio" type="radio" name="color" id="color-silver">
+                  <label class="color-label" for="color-silver" style="background-color: silver;" tabindex="0"></label>
+                </div>
+                <div class="filter-color__item">
+                  <input class="color-radio" type="radio" name="color" id="color-gold">
+                  <label class="color-label" for="color-gold" style="background-color: gold;" tabindex="0"></label>
+                </div>
+              
+            </div>
+            </div>
+          <div class="form__item">
+            <input class="form__btn" type="submit" value="искать">
+          </div>
+        </form>
+      </div>
+    <main class="flex">
       <div class="catalog grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-3">
         <a href="1card.html" target="_blank"><div class="bg-card-color p-8 flex flex-col relative border border-gray-300 cursor-pointer hover:shadow-lg shadow-gray-400 transition ease-in-out">
           <img class="rounded-md sm:max-md" src="/img/1.jpg" alt="Накрутка из титана для украшений толщиной 1/1,2мм">
