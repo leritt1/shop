@@ -12,7 +12,7 @@
   <div class="grid grid-rows-[auto 1fr auto] min-h-full container m-auto">
     <main>
       <div class="grid grid-cols-2">
-        <div class="swiper mySwiper">
+        <div class="swiper mySwiper1">
           <div class="swiper-wrapper">
             <div class="swiper-slide"><img class="" src="/img/1.jpg" alt=""></div>
             <div class="swiper-slide"><img class="" src="/img/1.2.jpg" alt=""></div>
@@ -25,7 +25,8 @@
         <div>
           <div>
             <span class="grow text-gray-400 font-semibold uppercase">Артикул: TPRFPGCUBB</span>
-            <h1 class="font-semibold text-2xl uppercase mt-4 mr-60">Банан для пупка из титана ASTM F-1295 толщиной 1,6мм с внутренней резьбой 1,2мм с шариками из опала</h1>
+            <h1 class="font-semibold text-2xl uppercase mt-4 mr-60">Банан для пупка из титана ASTM F-1295 толщиной 1,6мм
+              с внутренней резьбой 1,2мм с шариками из опала</h1>
           </div>
           <div class="flex mt-5 mb-5">
             <div class="basis-xs">
@@ -37,42 +38,100 @@
               <a class="underline" href="#">Industrial Strength</a>
             </div>
           </div>
-          <div>
-            <span class="grow font-bold text-textred-color text-2xl">3735₽</span>
-            <span class="grow gray-text font-bold line-through">4500 ₽</span>
+          <div class="mb-5 ">
+            <span class="grow font-bold text-black text-2xl">14 900₽</span>
             <span class="grow text-gray-400 font-bold"> шт.</span>
           </div>
-
-          <div id="accordion-collapse" data-accordion="collapse"
-            class="rounded-base border border-gray-300 border-default overflow-hidden shadow-xs ">
-            <h2 id="accordion-collapse-heading-1">
-              <button type="button"
-                class=" cursor-pointer flex items-center justify-between w-full p-5 rtl:text-right text-body rounded-t-base border border-gray-300 border-t-0 border-x-0 border-b-default hover:text-heading hover:bg-neutral-secondary-medium gap-3"
-                data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
-                aria-controls="accordion-collapse-body-1">
-                <span>Толщина: 1.6мм; Резьба: внутренняя 1.2мм; Длина: 9.5мм; Шарик: 4 и 6мм</span>
-                <svg data-accordion-icon class="w-5 h-5 rotate-180 shrink-0" aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="m5 15 7-7 7 7" />
-                </svg>
-              </button>
-            </h2>
-            <div id="accordion-collapse-body-1" class="hidden border border-gray-200  bg-gray-200"
-              aria-labelledby="accordion-collapse-heading-1">
-              <div class="p-4 md:p-5">
-                <button type="button" class="cursor-pointer"><p class="text-gray-600">Толщина: 1.6мм; Резьба: внутренняя 1.2мм; Длина: 9.5мм; Шарик: 4 и
-                  6мм</p></button>
-              </div>
+             <div class="flex">
+            <div class="mb-5">
+              <form class="border border-gray-300 ">
+                <label for="underline_select" class="sr-only">Долями</label>
+                <select id="underline_select"
+                  class="cursor-pointer w-50 whitespace-pre-line border-0 border-gray-300 focus:outline-none focus:ring-0 focus:border-brand peer">
+                  <option selected>4 платежа по 3 725 </option>
+                  <option value="CA">Серебряный, Sleepy Lavender 2 #52</option>
+                </select>
+              </form>
             </div>
-
+            <div class="ml-23">
+               <a class="underline text-gray-400" href="#">Таблица размеров</a>
+            </div>
+          </div>
+          <div class="flex">
+            <div>
+              <form class="border border-gray-300 ">
+                <label for="underline_select" class="sr-only">Толщина: 1.6мм; Резьба: внутренняя 1.2мм; Длина: 9.5мм;
+                  Шарик: 4 и 6мм</label>
+                <select id="underline_select"
+                  class=" cursor-pointer w-107 whitespace-pre-line border-0 border-gray-300 focus:outline-none focus:ring-0 focus:border-brand peer">
+                  <option selected>Толщина: 1.6мм; Резьба: внутренняя 1.2мм; Длина: 9.5мм; Шарик: 4 и 6мм</option>
+                  <option value="CA">Толщина: 1.6мм; Резьба: внутренняя 1.2мм; Длина: 8мм; Шарик: 4 и 6мм</option>
+                </select>
+              </form>
+            </div>
+            <div class="ml-5">
+              <form class="border border-gray-300 ">
+                <label for="underline_select" class="sr-only">Серебряный, Bubble Gum #42</label>
+                <select id="underline_select"
+                  class="cursor-pointer w-50 whitespace-pre-line border-0 border-gray-300 focus:outline-none focus:ring-0 focus:border-brand peer">
+                  <option selected>Серебряный, Bubble Gum #42</option>
+                  <option value="CA">Серебряный, Sleepy Lavender 2 #52</option>
+                </select>
+              </form>
+            </div>
+          </div>
+          <div class="flex mt-5">
+            <div>
+              <button type="button"
+                class="cursor-pointer w-80 items-center text-white bg-black hover:bg-brand-strong box-border border border-black font-medium px-5 py-3 hover:bg-main-color hover:text-black ">
+                В корзину
+              </button>
+            </div>
+            <div class="ml-5">
+              <button  type="button" 
+                class=" cursor-pointer inline-flex items-center justify-center border border-gray-300  w-13 h-13 focus:text-textred-color">
+                <i class="bi bi-suit-heart text-28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                  fill="none" viewBox="0 0 24 24">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z" />
+                </i>
+                <span class="sr-only">Избранное</span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
-
+     <div class="swiper mySwiper2 ">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+          <div class="bg-card-color p-8 flex flex-col relative border border-gray-300 cursor-pointer hover:shadow-lg shadow-gray-400 transition ease-in-out">
+          <img class="rounded-md sm:max-md" src="/img/2.jpg" alt="Накрутка из титана для украшений толщиной 1/1,2мм">
+          <h3 class="mb-5 grow ">Лабрет из титана толщина 1,6мм с внутр. резьбой 1,2мм кристаллы CZ</i></h3>
+          <div><span class="grow font-bold text-textred-color">1 400₽</span>
+            <span class="grow gray-text font-bold line-through">2 000 ₽</span>
+            <span class="grow text-gray-400 font-bold"> шт.</span>
+          </div>
+          <button
+            class="w-full bg-neutral-100 hover:outline outline-gray-300 focus:bg-gray-200 p-1 mt-2 cursor-pointer rounded-md transition ease-in-out">Долями
+            по 350 ₽</button>
+          <div class="absolute top-10 right-10 flex flex-col"> <button
+              class="scale-180  hover:scale-200 focus:text-textred-color focus:scale-200 transition ease-in-out"><i
+                class="bi bi-suit-heart cursor-pointer"></i></button></div>
+        </div>
+      </div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      <div class="swiper-slide">Slide 4</div>
+      <div class="swiper-slide">Slide 5</div>
+      <div class="swiper-slide">Slide 6</div>
+      <div class="swiper-slide">Slide 7</div>
+      <div class="swiper-slide">Slide 8</div>
+      <div class="swiper-slide">Slide 9</div>
+    </div>
+    <div class="swiper-pagination"></div>
   </div>
-
-  <script type="module" src="/src/main.js"></script>
+  
+      <script type="module" src="/src/main.js"></script>
 </body>
 
 </html>
