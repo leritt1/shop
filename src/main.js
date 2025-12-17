@@ -26,6 +26,31 @@ import 'swiper/css/pagination';
         clickable: true,
       },
     });
-    
+
+     const openBtn = document.querySelector('.filter-open-btn');
+    const closeBtn = document.querySelector('#filterClose');
+    const panel   = document.querySelector('#filterPanel');
+    const overlay = document.querySelector('#filterOverlay');
+
+    openBtn.onclick = () => {
+        panel.classList.add('active');
+        overlay.classList.add('active');
+        document.body.style.overflow = "hidden"; 
+    }
+
+    const closePanel = () => {
+        panel.classList.remove('active');
+        overlay.classList.remove('active');
+        document.body.style.overflow = "";
+    }
+
+    closeBtn.onclick = closePanel;
+    overlay.onclick = closePanel;
+    const logo = document.querySelector('.logo');
+    const menu = document.querySelector('.header-menu');
+
+    logo.addEventListener('click', () => {
+    menu.classList.toggle('active');
+    });
   
     

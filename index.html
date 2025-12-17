@@ -10,36 +10,59 @@
 
 <body class="bg-main-color text-text-color dark:bg-slate-900 dark:text-amber-50 h-full">
   <div class="grid grid-rows-[auto 1fr auto] min-h-full container m-auto">
-    <header></header> <div class="filter mb-10">
-        <h2>фильтровать</h2>
-        <form id="form-filter" action="">
-          <div class="form__item">
-            <div>
-              <label for="searh">введите название</label>
-            </div>
-            <div>
-              <input id="searh" name="searh" type="text" placeholder="поиск" required>
-            </div>
-          </div> 
-          <div class="form__item">
-              <h3>Цвет</h3>
-              <div class="filter-color"> 
-                <div class="filter-color__item">
-                  <input class="color-radio" type="radio" name="color" id="color-silver">
-                  <label class="color-label" for="color-silver" style="background-color: silver;" tabindex="0"></label>
-                </div>
-                <div class="filter-color__item">
-                  <input class="color-radio" type="radio" name="color" id="color-gold">
-                  <label class="color-label" for="color-gold" style="background-color: gold;" tabindex="0"></label>
-                </div>
-              
-            </div>
-            </div>
-          <div class="form__item">
-            <input class="form__btn" type="submit" value="искать">
-          </div>
-        </form>
+    <header>
+
+    </header> 
+    <div class="filters">
+      <button class="filter-open-btn cursor-pointer mb-6 mt-6 font-bold">
+        <i class="bi bi-sliders2 text-28"></i> ФИЛЬТРОВАТЬ 
+      </button>               
+    </div>
+    <div class="filter-panel" id="filterPanel">
+      <div class="filter-header">
+        <h2 class="font-medium">ФИЛЬТРЫ</h2>
+        <button class="filter-close-btn" id="filterClose"><i class="bi bi-x"></i></button>
+    </div>
+    <div class="filter-content">
+      <h3 class="font-medium">Цена</h3>
+      <div class="price-box">
+        <input type="text" placeholder="0">
+        <input type="text" placeholder="100000">
       </div>
+     <div class="filter-block">
+            <div class="filter-title toggle font-bold">
+              <h3 class="font-medium">Материал</h3>
+              <span class="icon">—</span>
+            </div>
+            <div class="material-scroll text-gray-500">
+              <label class="checkbox"><span>Титан</span><input type="checkbox"></label>
+              <label class="checkbox"><span>Хир. сталь</span><input type="checkbox"></label>
+              <label class="checkbox"><span>Серебро</span><input type="checkbox"></label>
+              <label class="checkbox"><span>Кобальт-хром</span><input type="checkbox"></label>
+              <label class="checkbox"><span>Латунь</span><input type="checkbox"></label>
+              <label class="checkbox"><span>Платина</span><input type="checkbox"></label>
+              <label class="checkbox"><span>Золото</span><input type="checkbox"></label>
+            </div>
+          </div>
+          <!-- .apply-btn {
+  margin-top: 10px;
+  padding: 15px;
+  background: #000000;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+} -->
+    </div>
+    <div class="flex">
+      <div>
+        <button class="">СБРОСИТЬ ВСЕ</button>
+      </div>
+      <div>
+        <button class="bg-amber-950">ПРОСМОТР</button>
+      </div>
+    </div>
+  </div>
+
     <main class="flex">
       <div class="catalog grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-3">
         <a href="1card.html" target="_blank"><div class="bg-card-color p-8 flex flex-col relative border border-gray-300 cursor-pointer hover:shadow-lg shadow-gray-400 transition ease-in-out">
