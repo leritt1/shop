@@ -98,7 +98,7 @@
 
 .filter-content h3 {
   margin-top: 35px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-size: 1rem;
 }
 
@@ -131,11 +131,28 @@
   font-size: 14px;
   cursor: pointer;
 }
+
+.icon {
+  cursor: pointer;
+  user-select: none;
+  font-size: 25px;
+}
+
+
 .material-scroll {
   max-height: 180px;
   overflow-y: auto;
   margin-top: 12px;
+  transition: max-height 0.3s ease, opacity 0.2s ease;
 }
+
+.material-scroll.closed {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  margin-top: 0;
+}
+
 
 .material-scroll::-webkit-scrollbar {
   width: 3px;
@@ -152,7 +169,81 @@
   padding: 10px 0;
   font-size: 14px;
   cursor: pointer;
+  margin-right: 10px;
+  color :#949494;
 }
+
+.brand-scroll {
+  max-height: 200px;
+  overflow-y: auto;
+  margin-top: 16px;
+  transition: max-height 0.3s ease, opacity 0.2s ease;
+}
+
+
+.brand-scroll.closed {
+  max-height: 0;
+  overflow: hidden;
+  margin-top: 0;
+}
+
+.brand-scroll::-webkit-scrollbar {
+  width: 3px;
+}
+
+.brand-scroll::-webkit-scrollbar-thumb {
+  background: #000;
+}
+
+.filter-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 24px;
+  border-top: 1px solid #d5d5d5;
+}
+
+.btn-reset {
+  background: transparent;
+  border: none;
+  border-right: 1px solid #d5d5d5;
+  padding: 24px 0;
+
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000;
+
+  cursor: pointer;
+  transition:  0.2s ease;
+}
+
+.btn-reset:hover {
+  background-color: #1c1c1c;
+  color: #D5D5D5;
+
+}
+
+.btn-view {
+  background-color:#1c1c1c;
+  border: none;
+  border-right: 1px solid #d5d5d5;
+  padding: 24px 0;
+
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #d5d5d5;
+
+  cursor: pointer;
+  transition:  0.2s ease;
+}
+.btn-view:hover {
+  background-color: #ffffff;
+  color: #1c1c1c;
+  border: #000;
+
+}
+
 
 @media (max-width: 1024px) {
   .filter-panel {

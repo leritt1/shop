@@ -52,5 +52,5 @@ import 'swiper/css/pagination';
     logo.addEventListener('click', () => {
     menu.classList.toggle('active');
     });
-  
+    
     
