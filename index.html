@@ -388,6 +388,14 @@
     });
   });
 });
+document.addEventListener('DOMContentLoaded', () => {
+  const burgerBtn = document.getElementById('mobile-menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  if (!burgerBtn || !mobileMenu) return;
+  burgerBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+});
 </script>
   <script type="module" src="/src/main.js"></script>
 </body>
