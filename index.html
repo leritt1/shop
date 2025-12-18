@@ -10,179 +10,205 @@
 
 <body class="bg-main-color text-text-color dark:bg-slate-900 dark:text-amber-50 h-full">
   <div class="grid grid-rows-[auto 1fr auto] min-h-full container m-auto">
-   
-<header class="w-full bg-white border-b border-gray-300">
-  <div class="flex items-center justify-between max-w-[1536px] mx-auto px-4 h-[125px] w-full">
-    <div class="flex-shrink-0">
-      <img src="img/logo.jpg" alt="logo" class="w-[90px] h-[85.5px] sm:w-[70px] sm:h-[66px]">
-    </div>
-     <nav class="hidden md:flex flex-1 justify-center items-center space-x-4 lg:space-x-6 text-[20px] font-medium uppercase min-w-0">
-      <a href="#" class="hover:underline truncate">Пирсинг</a>
-      <a href="#" class="hover:underline truncate">Украшения</a>
-      <a href="#" class="hover:underline truncate">Инструмент</a>
-      <a href="#" class="hover:underline truncate">Бренд</a>
-    </nav>
-    <div class="hidden md:flex items-center space-x-3 lg:space-x-6 text-[22px] font-medium uppercase flex-shrink-0 min-w-0">
-      <a href="#" class="hover:underline truncate">8 (800) 511-13-69</a>
-      <a href="#"><img src="img/search.svg" alt="search" class="w-[22px] h-[25px] hover:underline"></a>
-      <a href="#"><img src="img/favs.svg" alt="favourites" class="w-[22px] h-[25px] hover:underline"></a>
-      <a href="#"><img src="img/cart.svg" alt="cart" class="w-[22px] h-[25px] hover:underline"></a>
-      <a href="#" class="hover:underline truncate">Войти</a>
-    </div>
-    <div class="md:hidden flex items-center flex-shrink-0">
-      <button id="mobile-menu-btn" class="focus:outline-none">
-        <i class="bi bi-list text-3xl"></i>
-      </button>
-    </div>
-  </div>
-  <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-300 w-full">
-    <nav class="flex flex-col p-4 space-y-2 uppercase text-[20px] font-medium">
-      <a href="#" class="hover:underline">Пирсинг</a>
-      <a href="#" class="hover:underline">Украшения</a>
-      <a href="#" class="hover:underline">Инструмент</a>
-      <a href="#" class="hover:underline">Бренд</a>
-      <a href="#" class="hover:underline">8 (800) 511-13-69</a>
-      <a href="#" class="hover:underline">Войти</a>
-      <div class="flex space-x-4 mt-2">
-        <a href="#"><img src="img/search.svg" alt="search" class="w-[22px] h-[25px]"></a>
-        <a href="#"><img src="img/favs.svg" alt="favourites" class="w-[22px] h-[25px]"></a>
-        <a href="#"><img src="img/cart.svg" alt="cart" class="w-[22px] h-[25px]"></a>
+    <header class="w-full bg-white border-b border-gray-300">
+      <div class="flex items-center justify-between max-w-[1536px] mx-auto px-4 h-[125px] w-full">
+        <div class="flex-shrink-0">
+          <img src="img/logo.jpg" alt="logo" class="w-[90px] h-[85.5px] sm:w-[70px] sm:h-[66px]">
+        </div>
+        <nav
+          class="hidden md:flex flex-1 justify-center items-center space-x-4 lg:space-x-6 text-[20px] font-medium uppercase min-w-0">
+          <a href="#" class="hover:underline truncate">Пирсинг</a>
+          <a href="#" class="hover:underline truncate">Украшения</a>
+          <a href="#" class="hover:underline truncate">Инструмент</a>
+          <a href="#" class="hover:underline truncate">Бренд</a>
+        </nav>
+        <div
+          class="hidden md:flex items-center space-x-3 lg:space-x-6 text-[22px] font-medium uppercase flex-shrink-0 min-w-0">
+          <a href="#" class="hover:underline truncate">8 (800) 511-13-69</a>
+          <a href="#"><img src="img/search.svg" alt="search" class="w-[22px] h-[25px] hover:underline"></a>
+          <a href="#"><img src="img/favs.svg" alt="favourites" class="w-[22px] h-[25px] hover:underline"></a>
+          <a href="#"><img src="img/cart.svg" alt="cart" class="w-[22px] h-[25px] hover:underline"></a>
+          <a href="#" class="hover:underline truncate">Войти</a>
+        </div>
+        <div class="md:hidden flex items-center flex-shrink-0">
+          <button id="mobile-menu-btn" class="focus:outline-none">
+            <i class="bi bi-list text-3xl"></i>
+          </button>
+        </div>
       </div>
-    </nav>
-  </div>
-</header>
-
-<script>
-  const btn = document.getElementById('mobile-menu-btn');
-  const menu = document.getElementById('mobile-menu');
-  btn.addEventListener('click', () => {
-    menu.classList.toggle('hidden');
-  });
-</script>
+      <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-300 w-full">
+        <nav class="flex flex-col p-4 space-y-2 uppercase text-[20px] font-medium">
+          <a href="#" class="hover:underline">Пирсинг</a>
+          <a href="#" class="hover:underline">Украшения</a>
+          <a href="#" class="hover:underline">Инструмент</a>
+          <a href="#" class="hover:underline">Бренд</a>
+          <a href="#" class="hover:underline">8 (800) 511-13-69</a>
+          <a href="#" class="hover:underline">Войти</a>
+          <div class="flex space-x-4 mt-2">
+            <a href="#"><img src="img/search.svg" alt="search" class="w-[22px] h-[25px]"></a>
+            <a href="#"><img src="img/favs.svg" alt="favourites" class="w-[22px] h-[25px]"></a>
+            <a href="#"><img src="img/cart.svg" alt="cart" class="w-[22px] h-[25px]"></a>
+          </div>
+        </nav>
+      </div>
+    </header>
+   
     <div class="filters">
       <button class="filter-open-btn cursor-pointer mb-6 mt-6 font-bold">
-        <i class="bi bi-sliders2 text-28"></i> ФИЛЬТРОВАТЬ 
-      </button>               
+        <i class="bi bi-sliders2 text-28"></i> ФИЛЬТРОВАТЬ
+      </button>
     </div>
     <div class="filter-panel" id="filterPanel">
       <div class="filter-header">
         <h2 class="font-medium">ФИЛЬТРЫ</h2>
         <button class="filter-close-btn" id="filterClose"><i class="bi bi-x"></i></button>
-    </div>
-    <div class="filter-content">
-      <h3 class="font-medium">Цена</h3>
-      <div class="price-box">
-        <input type="text" placeholder="0">
-        <input type="text" placeholder="100000">
       </div>
-    <div class="filter-block">
-  <div class="filter-title font-bold">
-    <h3 class="font-medium">Материал</h3>
-    <span class="icon">+</span>
-  </div>
-
-  <div class="material-scroll text-gray-500 closed">
-    <label class="checkbox"><span>Титан</span><input type="checkbox"></label>
-    <label class="checkbox"><span>Хир. сталь</span><input type="checkbox"></label>
-    <label class="checkbox"><span>Серебро</span><input type="checkbox"></label>
-    <label class="checkbox"><span>Латунь</span><input type="checkbox"></label>
-    <label class="checkbox"><span>Акрил</span><input type="checkbox"></label>
-    <label class="checkbox"><span>Биофлекс</span><input type="checkbox"></label>
-    <label class="checkbox"><span>Биопласт</span><input type="checkbox"></label>
-    <label class="checkbox"><span>Силикон</span><input type="checkbox"></label>
-    <label class="checkbox"><span>Синтетический камень</span><input type="checkbox"></label>
-    <label class="checkbox"><span>Натуральный камень</span><input type="checkbox"></label>
-    <label class="checkbox"><span>Вольфрам</span><input type="checkbox"></label>
-    <label class="checkbox"><span>Фианит</span><input type="checkbox"></label>
-    <label class="checkbox"><span>Синтетический опал</span><input type="checkbox"></label>
-    <label class="checkbox"><span>Premium Zirconia</span><input type="checkbox"></label>
-  </div>
-  <script>
-  document.querySelectorAll('.filter-block').forEach(block => {
-    const icon = block.querySelector('.icon');
-    const content = block.querySelector('.material-scroll');
-
-    icon.addEventListener('click', () => {
-      const isClosed = content.classList.toggle('closed');
-      icon.textContent = isClosed ? '+' : '—';
-    });
-  });
-</script>
-</div>
-<div class="filter-block">
-  <div class="filter-title">
-    <h3 class="font-medium">Бренд</h3>
-    <span class="icon">+</span>
-  </div>
-
-  <div class="brand-scroll closed">
-    <label class="checkbox">
-      <span>Holy Metal</span>
-      <input type="checkbox">
-    </label>
-
-    <label class="checkbox">
-      <span>Industrial Strength</span>
-      <input type="checkbox">
-    </label>
-
-    <label class="checkbox">
-      <span>Steel and Silver</span>
-      <input type="checkbox">
-    </label>
-
-    <label class="checkbox">
-      <span>Chaotic Trading</span>
-      <input type="checkbox">
-    </label>
-
-    <label class="checkbox">
-      <span>Hollywood</span>
-      <input type="checkbox">
-    </label>
-    <label class="checkbox">
-      <span>WP</span>
-      <input type="checkbox">
-    </label>
-  </div>
-  <script>
-  document.querySelectorAll('.filter-block').forEach(block => {
-    const icon = block.querySelector('.icon');
-    const content = block.querySelector('.brand-scroll');
-
-    icon.addEventListener('click', () => {
-      const isClosed = content.classList.toggle('closed');
-      icon.textContent = isClosed ? '+' : '—';
-    
-    });
-  });
-</script>
-</div>
+      <div class="filter-content">
+        <h3 class="font-medium">Цена</h3>
+        <div class="price-box">
+          <input type="text" placeholder="0">
+          <input type="text" placeholder="100000">
+        </div>
+        <div class="filter-block">
+          <div class="filter-title font-bold">
+            <h3 class="font-medium">Материал</h3>
+            <span class="icon">+</span>
+          </div>
+          <div class="material-scroll text-gray-500 closed">
+            <label class="checkbox"><span>Титан</span><input type="checkbox"></label>
+            <label class="checkbox"><span>Хир. сталь</span><input type="checkbox"></label>
+            <label class="checkbox"><span>Серебро</span><input type="checkbox"></label>
+            <label class="checkbox"><span>Латунь</span><input type="checkbox"></label>
+            <label class="checkbox"><span>Акрил</span><input type="checkbox"></label>
+            <label class="checkbox"><span>Биофлекс</span><input type="checkbox"></label>
+            <label class="checkbox"><span>Биопласт</span><input type="checkbox"></label>
+            <label class="checkbox"><span>Силикон</span><input type="checkbox"></label>
+            <label class="checkbox"><span>Синтетический камень</span><input type="checkbox"></label>
+            <label class="checkbox"><span>Натуральный камень</span><input type="checkbox"></label>
+            <label class="checkbox"><span>Вольфрам</span><input type="checkbox"></label>
+            <label class="checkbox"><span>Фианит</span><input type="checkbox"></label>
+            <label class="checkbox"><span>Синтетический опал</span><input type="checkbox"></label>
+            <label class="checkbox"><span>Premium Zirconia</span><input type="checkbox"></label>
+          </div>
+        </div>
+        <div class="filter-block">
+          <div class="filter-title">
+            <h3 class="font-medium">Бренд</h3>
+            <span class="icon">+</span>
+          </div>
+          <div class="brand-scroll closed">
+            <label class="checkbox">
+              <span>Holy Metal</span>
+              <input type="checkbox">
+            </label>
+            <label class="checkbox">
+              <span>Industrial Strength</span>
+              <input type="checkbox">
+            </label>
+            <label class="checkbox">
+              <span>Steel and Silver</span>
+              <input type="checkbox">
+            </label>
+            <label class="checkbox">
+              <span>Chaotic Trading</span>
+              <input type="checkbox">
+            </label>
+            <label class="checkbox">
+              <span>Hollywood</span>
+              <input type="checkbox">
+            </label>
+            <label class="checkbox">
+              <span>WP</span>
+              <input type="checkbox">
+            </label>
+          </div>
+        </div>
+        <div class="filter-block">
+          <div class="filter-title font-bold">
+            <h3 class="font-medium">Размер</h3>
+            <span class="icon">+</span>
+          </div>
+          <div class="material-scroll closed">
+            <div class="nested-block ">
+              <div class="nested-title">
+                <span class="text-gray-500 ">Толщина</span>
+                <span class="icon">+</span>
+              </div>
+              <div class="nested-content closed">
+                <label class="checkbox"><span>1.6 мм</span><input type="checkbox"></label>
+                <label class="checkbox"><span>2 мм</span><input type="checkbox"></label>
+                <label class="checkbox"><span>2.5 мм</span><input type="checkbox"></label>
+              </div>
+            </div>
+            <div class="nested-block">
+              <div class="nested-title">
+                <span class="text-gray-500 ">Резьба</span>
+                <span class="icon">+</span>
+              </div>
+              <div class="nested-content closed">
+                <label class="checkbox"><span>Внутренняя 0.9 мм</span><input type="checkbox"></label>
+                <label class="checkbox"><span>Внутренняя 1.2 мм</span><input type="checkbox"></label>
+                <label class="checkbox"><span>Внутренняя 1.6 мм</span><input type="checkbox"></label>
+                <label class="checkbox"><span>Безрезьбовая</span><input type="checkbox"></label>
+                <label class="checkbox"><span>Внешняя</span><input type="checkbox"></label>
+              </div>
+            </div>
+            <div class="nested-block">
+              <div class="nested-title">
+                <span class="text-gray-500 ">Длина</span>
+                <span class="icon">+</span>
+              </div>
+              <div class="nested-content closed">
+                <label class="checkbox"><span>9 мм</span><input type="checkbox"></label>
+                <label class="checkbox"><span>9.5 мм</span><input type="checkbox"></label>
+                <label class="checkbox"><span>10 мм</span><input type="checkbox"></label>
+                <label class="checkbox"><span>11 мм</span><input type="checkbox"></label>
+                <label class="checkbox"><span>12 мм</span><input type="checkbox"></label>
+              </div>
+            </div>
+            <div class="nested-block">
+              <div class="nested-title">
+                <span class="text-gray-500 ">Диаметр</span>
+                <span class="icon">+</span>
+              </div>
+              <div class="nested-content closed">
+                <label class="checkbox"><span>8 мм</span><input type="checkbox"></label>
+                <label class="checkbox"><span>12 мм</span><input type="checkbox"></label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="filter-actions">
+        <button class="btn-reset font-bold">СБРОСИТЬ ВСЁ</button>
+        <button class="btn-view font-bold">ПРОСМОТР: 86</button>
+      </div>
     </div>
-    <div class="filter-actions">
-      <button class="btn-reset font-bold">СБРОСИТЬ ВСЁ</button>
-      <button class="btn-view font-bold">ПРОСМОТР: 86</button>
-    </div>
-  </div>
-
     <main class="flex">
       <div class="catalog grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-3">
-        <a href="1card.html" target="_blank"><div class="bg-card-color p-8 flex flex-col relative border border-gray-300 cursor-pointer hover:shadow-lg shadow-gray-400 transition ease-in-out">
-          <img class="rounded-md sm:max-md" src="/img/1.jpg" alt="Накрутка из титана для украшений толщиной 1/1,2мм">
-          <h3 class="mb-5 grow ">Банан для пупка из титана ASTM F-1295 толщиной 1,6мм с внутренней резьбой 1,2мм с шариками из опала</i></h3>
-          <div><span class="grow font-bold text-gray-950">14 900₽</span>
-            <span class="grow text-gray-400 font-bold"> пара</span>
+        <a href="1card.html" target="_blank">
+          <div
+            class="bg-card-color p-8 flex flex-col relative border border-gray-300 cursor-pointer hover:shadow-lg shadow-gray-400 transition ease-in-out">
+            <img class="rounded-md sm:max-md" src="/img/1.jpg" alt="Накрутка из титана для украшений толщиной 1/1,2мм">
+            <h3 class="mb-5 grow ">Банан для пупка из титана ASTM F-1295 толщиной 1,6мм с внутренней резьбой 1,2мм с
+              шариками из опала</i></h3>
+            <div><span class="grow font-bold text-gray-950">14 900₽</span>
+              <span class="grow text-gray-400 font-bold"> пара</span>
+            </div>
+            <div class="flex">
+              <button
+                class="w-full bg-neutral-100 hover:outline outline-gray-300 focus:bg-gray-200 p-1 mt-2 cursor-pointer rounded-md transition ease-in-out">Долями
+                по 3 725 ₽</button>
+            </div>
+            <div class="absolute top-10 right-10 flex flex-col"> <button
+                class="scale-180  hover:scale-200 focus:text-textred-color focus:scale-200 transition ease-in-out"><i
+                  class="bi bi-suit-heart cursor-pointer"></i></button></div>
+            <div class="new absolute top-13 -left-7 flex flex-col uppercase rotate-270 p-2 bg-stone-200 font-medium">
+              новинка</div>
           </div>
-          <button
-            class="w-full bg-neutral-100 hover:outline outline-gray-300 focus:bg-gray-200 p-1 mt-2 cursor-pointer rounded-md transition ease-in-out">Долями
-            по 3 725 ₽</button>
-          <div class="absolute top-10 right-10 flex flex-col"> <button
-              class="scale-180  hover:scale-200 focus:text-textred-color focus:scale-200 transition ease-in-out"><i
-                class="bi bi-suit-heart cursor-pointer"></i></button></div>
-          <div class="new absolute top-13 -left-7 flex flex-col uppercase rotate-270 p-2 bg-stone-200 font-medium">
-            новинка</div>
-        </div></a>
-        <div class="bg-card-color p-8 flex flex-col relative border border-gray-300 cursor-pointer hover:shadow-lg shadow-gray-400 transition ease-in-out">
+        </a>
+        <div
+          class="bg-card-color p-8 flex flex-col relative border border-gray-300 cursor-pointer hover:shadow-lg shadow-gray-400 transition ease-in-out">
           <img class="rounded-md sm:max-md" src="/img/2.jpg" alt="Накрутка из титана для украшений толщиной 1/1,2мм">
           <h3 class="mb-5 grow ">Лабрет из титана толщина 1,6мм с внутр. резьбой 1,2мм кристаллы CZ</i></h3>
           <div><span class="grow font-bold text-textred-color">1 400₽</span>
@@ -196,7 +222,8 @@
               class="scale-180  hover:scale-200 focus:text-textred-color focus:scale-200 transition ease-in-out"><i
                 class="bi bi-suit-heart cursor-pointer"></i></button></div>
         </div>
-        <div class="bg-card-color p-8 flex flex-col relative border border-gray-300 cursor-pointer hover:shadow-lg shadow-gray-400 transition ease-in-out">
+        <div
+          class="bg-card-color p-8 flex flex-col relative border border-gray-300 cursor-pointer hover:shadow-lg shadow-gray-400 transition ease-in-out">
           <img class="rounded-md sm:max-md" src="/img/3.jpg" alt="Накрутка из титана для украшений толщиной 1/1,2мм">
           <h3 class="mb-5 grow ">Серьги - кликеры из хирургической стали 316L с шипами</i></h3>
           <div><span class="grow font-bold text-textred-color">980₽</span>
@@ -210,7 +237,8 @@
               class="scale-180  hover:scale-200 focus:text-textred-color focus:scale-200 transition ease-in-out"><i
                 class="bi bi-suit-heart cursor-pointer"></i></button></div>
         </div>
-        <div class="bg-card-color p-8 flex flex-col relative border border-gray-300 cursor-pointer hover:shadow-lg shadow-gray-400 transition ease-in-out">
+        <div
+          class="bg-card-color p-8 flex flex-col relative border border-gray-300 cursor-pointer hover:shadow-lg shadow-gray-400 transition ease-in-out">
           <img class="rounded-md sm:max-md" src="/img/4.jpg" alt="Накрутка из титана для украшений толщиной 1/1,2мм">
           <h3 class="mb-5 grow ">Тяги для тоннелей из белой латуни с камнем аметист от 14мм</i></h3>
           <div><span class="grow font-bold text-gray-950">15 400₽</span>
@@ -223,7 +251,8 @@
               class="scale-180  hover:scale-200 focus:text-textred-color focus:scale-200 transition ease-in-out"><i
                 class="bi bi-suit-heart cursor-pointer"></i></button></div>
         </div>
-        <div class="bg-card-color p-8 flex flex-col relative border border-gray-300 cursor-pointer hover:shadow-lg shadow-gray-400 transition ease-in-out">
+        <div
+          class="bg-card-color p-8 flex flex-col relative border border-gray-300 cursor-pointer hover:shadow-lg shadow-gray-400 transition ease-in-out">
           <img class="rounded-md sm:max-md" src="/img/5.jpg" alt="Накрутка из титана для украшений толщиной 1/1,2мм">
           <h3 class="mb-5 grow ">Штанга из титана толщина 1,6мм с внутренней резьбой 1,2мм с кристаллами Premium
             Zirconia</i></h3>
@@ -237,7 +266,8 @@
               class="scale-180  hover:scale-200 focus:text-textred-color focus:scale-200 transition ease-in-out"><i
                 class="bi bi-suit-heart cursor-pointer"></i></button></div>
         </div>
-        <div class="bg-card-color p-8 flex flex-col relative border border-gray-300 cursor-pointer hover:shadow-lg shadow-gray-400 transition ease-in-out">
+        <div
+          class="bg-card-color p-8 flex flex-col relative border border-gray-300 cursor-pointer hover:shadow-lg shadow-gray-400 transition ease-in-out">
           <img class="rounded-md sm:max-md" src="/img/6.jpg" alt="Накрутка из титана для украшений толщиной 1/1,2мм">
           <h3 class="mb-5 grow ">Кольцо кликер из титана толщина 1,2мм</i></h3>
           <div><span class="grow font-bold text-gray-950">3 200₽</span>
@@ -250,7 +280,8 @@
               class="scale-180  hover:scale-200 focus:text-textred-color focus:scale-200 transition ease-in-out"><i
                 class="bi bi-suit-heart cursor-pointer"></i></button></div>
         </div>
-        <div class="bg-card-color p-8 flex flex-col relative border border-gray-300 cursor-pointer hover:shadow-lg shadow-gray-400 transition ease-in-out">
+        <div
+          class="bg-card-color p-8 flex flex-col relative border border-gray-300 cursor-pointer hover:shadow-lg shadow-gray-400 transition ease-in-out">
           <img class="rounded-md sm:max-md" src="/img/7.jpg" alt="Накрутка из титана для украшений толщиной 1/1,2мм">
           <h3 class="mb-5 grow ">Украшение для септума из титана ASTM F-1295 с кристаллами Premium Zirconia</i></h3>
           <div><span class="grow font-bold text-gray-950">24 400₽</span>
@@ -263,7 +294,8 @@
               class="scale-180  hover:scale-200 focus:text-textred-color focus:scale-200 transition ease-in-out"><i
                 class="bi bi-suit-heart cursor-pointer"></i></button></div>
         </div>
-        <div class="bg-card-color p-8 flex flex-col relative border border-gray-300 cursor-pointer hover:shadow-lg shadow-gray-400 transition ease-in-out">
+        <div
+          class="bg-card-color p-8 flex flex-col relative border border-gray-300 cursor-pointer hover:shadow-lg shadow-gray-400 transition ease-in-out">
           <img class="rounded-md sm:max-md" src="/img/8.jpg" alt="Накрутка из титана для украшений толщиной 1/1,2мм">
           <h3 class="mb-5 grow ">Украшения для крыла носа из титана толщина 1мм с опалами</i></h3>
           <div><span class="grow font-bold text-gray-950">900₽</span>
@@ -278,60 +310,85 @@
         </div>
       </div>
     </main>
-  <footer class="w-full bg-black text-white mt-16">
-  <div class="max-w-[1536px] mx-auto px-4 py-12 flex flex-col lg:flex-row gap-12">
-    <div class="flex-shrink-0 mb-6 lg:mb-0">
-      <img src="img/logo-white-69.jpg" alt="LOGO-negative" class="w-[90px] h-auto sm:w-[70px]">
-    </div>
-    <div class="flex-1 flex flex-col md:flex-row md:flex-wrap gap-8 md:gap-12">
-      <div class="flex-1 min-w-[180px] md:min-w-[45%] lg:min-w-[180px]">
-        <p class="uppercase text-[22px] font-medium mb-4">Контакты</p>
-        <div class="flex flex-col gap-2">
-          <p class="hover:underline leading-7">Россия, г. Санкт-Петербург</p>
-          <p class="hover:underline leading-7">ул. Итальянская, 12Е</p>
-          <a href="#" class="hover:underline leading-7">8 (800) 511 13 69</a>
-          <a href="#" class="hover:underline leading-7">admin@69level.com</a>
-          <a href="https://vk.com/feed" target="_blank" class="mt-4">
-            <img src="img/vk.jpg" alt="VK" class="w-8 h-8">
-          </a>
+    <footer class="w-full bg-black text-white mt-16">
+      <div class="max-w-[1536px] mx-auto px-4 py-12 flex flex-col lg:flex-row gap-12">
+        <div class="flex-shrink-0 mb-6 lg:mb-0">
+          <img src="img/logo-white-69.jpg" alt="LOGO-negative" class="w-[90px] h-auto sm:w-[70px]">
+        </div>
+        <div class="flex-1 flex flex-col md:flex-row md:flex-wrap gap-8 md:gap-12">
+          <div class="flex-1 min-w-[180px] md:min-w-[45%] lg:min-w-[180px]">
+            <p class="uppercase text-[22px] font-medium mb-4">Контакты</p>
+            <div class="flex flex-col gap-2">
+              <p class="hover:underline leading-7">Россия, г. Санкт-Петербург</p>
+              <p class="hover:underline leading-7">ул. Итальянская, 12Е</p>
+              <a href="#" class="hover:underline leading-7">8 (800) 511 13 69</a>
+              <a href="#" class="hover:underline leading-7">admin@69level.com</a>
+              <a href="https://vk.com/feed" target="_blank" class="mt-4">
+                <img src="img/vk.jpg" alt="VK" class="w-8 h-8">
+              </a>
+            </div>
+          </div>
+          <div class="flex-1 min-w-[180px] md:min-w-[45%] lg:min-w-[180px]">
+            <p class="uppercase text-[22px] font-medium mb-4">Статьи</p>
+            <div class="flex flex-col gap-2">
+              <a href="#" class="hover:underline leading-7">Таблица размеров</a>
+              <a href="#" class="hover:underline leading-7">Обмен и возврат</a>
+              <a href="#" class="hover:underline leading-7">Гарантийные обязательства</a>
+              <a href="#" class="hover:underline leading-7">Отмена заказа</a>
+              <a href="#" class="hover:underline leading-7">Оптом</a>
+              <a href="#" class="hover:underline leading-7">Условия оферты</a>
+              <a href="#" class="hover:underline leading-7">Пользовательское соглашение</a>
+              <a href="#" class="hover:underline leading-7">Помощь</a>
+            </div>
+          </div>
+          <div class="flex-1 min-w-[180px] md:min-w-[45%] lg:min-w-[180px]">
+            <p class="uppercase text-[22px] font-medium mb-4">О нас</p>
+            <div class="flex flex-col gap-2">
+              <a href="#" class="hover:underline leading-7">О магазине</a>
+              <a href="#" class="hover:underline leading-7">Сертификаты</a>
+              <a href="#" class="hover:underline leading-7">Статьи</a>
+            </div>
+          </div>
+          <div class="flex-1 min-w-[180px] md:min-w-[45%] lg:min-w-[180px]">
+            <p class="uppercase text-[22px] font-medium mb-4">Мой аккаунт</p>
+            <div class="flex flex-col gap-2">
+              <a href="#" class="hover:underline leading-7">Войти</a>
+              <a href="#" class="hover:underline leading-7">Регистрация</a>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="flex-1 min-w-[180px] md:min-w-[45%] lg:min-w-[180px]">
-        <p class="uppercase text-[22px] font-medium mb-4">Статьи</p>
-        <div class="flex flex-col gap-2">
-          <a href="#" class="hover:underline leading-7">Таблица размеров</a>
-          <a href="#" class="hover:underline leading-7">Обмен и возврат</a>
-          <a href="#" class="hover:underline leading-7">Гарантийные обязательства</a>
-          <a href="#" class="hover:underline leading-7">Отмена заказа</a>
-          <a href="#" class="hover:underline leading-7">Оптом</a>
-          <a href="#" class="hover:underline leading-7">Условия оферты</a>
-          <a href="#" class="hover:underline leading-7">Пользовательское соглашение</a>
-          <a href="#" class="hover:underline leading-7">Помощь</a>
-        </div>
-      </div>
-      <div class="flex-1 min-w-[180px] md:min-w-[45%] lg:min-w-[180px]">
-        <p class="uppercase text-[22px] font-medium mb-4">О нас</p>
-        <div class="flex flex-col gap-2">
-          <a href="#" class="hover:underline leading-7">О магазине</a>
-          <a href="#" class="hover:underline leading-7">Сертификаты</a>
-          <a href="#" class="hover:underline leading-7">Статьи</a>
-        </div>
-      </div>
-
-      <div class="flex-1 min-w-[180px] md:min-w-[45%] lg:min-w-[180px]">
-        <p class="uppercase text-[22px] font-medium mb-4">Мой аккаунт</p>
-        <div class="flex flex-col gap-2">
-          <a href="#" class="hover:underline leading-7">Войти</a>
-          <a href="#" class="hover:underline leading-7">Регистрация</a>
-        </div>
-      </div>
-
-    </div>
+    </footer>
   </div>
-</footer>
-    </div>
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.filter-block').forEach(block => {
+      const title = block.querySelector('.filter-title');
+      if (!title) return;
+      const icon = title.querySelector('.icon');
 
+    const content =
+      block.querySelector('.material-scroll') ||
+      block.querySelector('.brand-scroll');
+      if (!content) return;
+      title.addEventListener('click', () => {
+      const isClosed = content.classList.toggle('closed');
+      icon.textContent = isClosed ? '+' : '—';
+    });
+  });
+
+  document.querySelectorAll('.nested-title').forEach(nestedTitle => {
+    const icon = nestedTitle.querySelector('.icon');
+    const content = nestedTitle.nextElementSibling;
+    if (!content) return;
+    nestedTitle.addEventListener('click', (e) => {
+      e.stopPropagation(); 
+      const isClosed = content.classList.toggle('closed');
+      icon.textContent = isClosed ? '+' : '—';
+    });
+  });
+});
+</script>
   <script type="module" src="/src/main.js"></script>
 </body>
-
 </html>
